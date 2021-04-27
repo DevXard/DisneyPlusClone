@@ -132,9 +132,7 @@ const Player = styled.button`
   img {
     width: 32px;
   }
-  span{
-      margin-right: 20px;
-  }
+
   &:hover {
     background: rgb(198, 198, 198);
   }
@@ -153,9 +151,7 @@ const Trailer = styled(Player)`
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(249, 249, 249);
   color: rgb(249, 249, 249);
-  span{
-      padding-right: 10px;
-  }
+  
 `;
 
 const AddList = styled.div`
