@@ -51,14 +51,9 @@ const Header = () => {
 
     return (
         <Nav>
-            <Logo>
+            <Logo to="/">
                 <img src="/images/logo.svg"  alt="Disney"/>
             </Logo>
-            {!userName ? 
-                
-                   <Login onClick={handleAuth}>Login</Login>
-                :
-            <>
             <NavMenu>
                 <Link to="/home" >
                     <img src="/images/home-icon.svg" alt='home' />
@@ -85,6 +80,12 @@ const Header = () => {
                     <span>SERIES</span>
                 </Link>
             </NavMenu>
+            {!userName ? 
+                
+                   <Login onClick={handleAuth}>Login</Login>
+                :
+            <>
+            
             <SignOut>
                 <UserImg src={userPhoto} alt="User Image"/>
                 <DropDown>
